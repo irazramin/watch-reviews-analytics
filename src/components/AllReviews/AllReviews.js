@@ -1,5 +1,5 @@
 import React from 'react';
-import useFetch from '../../hooks/useFatch';
+import useFetch from '../hooks/useFatch';
 import Review from '../Review/Review';
 
 const AllReviews = () => {

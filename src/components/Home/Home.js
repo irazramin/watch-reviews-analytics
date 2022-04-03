@@ -1,11 +1,18 @@
 import React from 'react';
-import useFetch from '../../hooks/useFatch';
+import { useNavigate } from 'react-router-dom';
 import Hero from '../Hero/Hero';
+import useFetch from '../hooks/useFatch';
 import Review from '../Review/Review';
 
 const Home = () => {
     const [watchs,setWatchs] = useFetch();
+    const navigate = useNavigate();
     const homeReview = watchs.filter((item ,idx) => idx < 3);
+
+    const handleReviewsNavigate = () =>{
+    const path = '/reviews';
+    navigate(path);
+    }
   return (
     <div className='w-10/12 mx-auto'>
       <div>
@@ -16,10 +23,12 @@ const Home = () => {
           Total Reviews ({homeReview.length})
         </h3>
         <div className='grid grid-cols-3 gap-7'>
-          {homeReview.map(
-            (review, idx) =>
-               <Review key={review.id} review={review} />
-          )}
+          {homeReview.map((review, idx) => (
+            <Review key={review.id} review={review} />
+          ))}
+        </div>
+        <div className=' text-center mt-10'>
+          <button className='bg-orange-500 px-6 text-white hover:bg-orange-800 py-2' onClick={handleReviewsNavigate}>See all review</button>
         </div>
       </div>
     </div>

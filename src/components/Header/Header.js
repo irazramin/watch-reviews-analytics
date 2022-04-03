@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomLink from '../CustomLink/CustomLink';
-import { navItems } from '../data/navData';
+import { navItems } from '../../data/navData';
 
 const Header = () => {
 
