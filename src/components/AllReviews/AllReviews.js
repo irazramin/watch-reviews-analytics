@@ -7,7 +7,7 @@ const AllReviews = () => {
   return (
     <div className='grid grid-cols-3 gap-7'>
       {watchs.map(
-        (review, idx) => idx < 3 && <Review key={review.id} review={review} />
+        (review, idx) =>  <Review key={review.id}  review={review} />
       )}
     </div>
   );
