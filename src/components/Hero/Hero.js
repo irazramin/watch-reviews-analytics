@@ -2,7 +2,7 @@ import React from 'react';
 import hero from '../../img/hero-img.png';
 const Hero = () => {
   return (
-    <section className='flex items-center  justify-between mt-10'>
+    <section className='lg:flex-row flex-col-reverse flex items-center  justify-between mt-10'>
       <div>
         <h1 className='text-6xl font-semibold '>
           {' '}
@@ -17,7 +17,7 @@ const Hero = () => {
         </button>
       </div>
       <div>
-        <img className='object-cover' src={hero} alt='' />
+        <img className='object-cover lg:w-full w-72' src={hero} alt='' />
       </div>
     </section>
   );

@@ -5,9 +5,9 @@ import useFetch from '../hooks/useFatch';
 import Review from '../Review/Review';
 
 const Home = () => {
-    const [watchs,setWatchs] = useFetch();
+    const [reviews,setreviews] = useFetch();
     const navigate = useNavigate();
-    const homeReview = watchs.filter((item ,idx) => idx < 3);
+    const homeReview = reviews.filter((item ,idx) => idx < 3);
 
     const handleReviewsNavigate = () =>{
     const path = '/reviews';
@@ -22,7 +22,7 @@ const Home = () => {
         <h3 className='text-center text-lg font-medium mb-5'>
           Total Reviews ({homeReview.length})
         </h3>
-        <div className='grid grid-cols-3 gap-7'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
           {homeReview.map((review, idx) => (
             <Review key={review.id} review={review} />
           ))}

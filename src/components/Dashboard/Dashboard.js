@@ -4,10 +4,10 @@ import analytics from '../../data/analytic';
 
 const Dashboard = () => {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 my-10 w-10/12 mx-auto gap-10'>
-      <div>
+    <div className='grid grid-cols-1 lg:grid-cols-2 my-10 w-10/12 mx-auto gap-10 place-content-evenly'>
+      <div >
         <LineChart
-          width={430}
+          width={350}
           height={250}
           data={analytics}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
@@ -27,7 +27,7 @@ const Dashboard = () => {
       </div>
       <div>
         <AreaChart
-          width={430}
+          width={350}
           height={250}
           data={analytics}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
@@ -63,7 +63,7 @@ const Dashboard = () => {
         </AreaChart>
       </div>
       <div>
-        <BarChart width={430} height={250} data={analytics}>
+        <BarChart width={350} height={250} data={analytics}>
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey='month' />
           <YAxis dataKey={'investment'} />
@@ -75,7 +75,7 @@ const Dashboard = () => {
         </BarChart>
       </div>
       <div>
-        <PieChart width={430} height={250}>
+        <PieChart width={350} height={250}>
           <Pie
             data={analytics}
             dataKey='investment'
