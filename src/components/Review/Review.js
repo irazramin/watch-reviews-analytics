@@ -21,7 +21,7 @@ const Review = ({review}) => {
           />
           <span className='mt-[3px] ml-2'>({rating.toFixed(1)}) </span>
         </div>
-        <p>{reviewDesc.slice(0,50)}</p>
+        <p>{reviewDesc}</p>
       </div>
     </div>
   );
