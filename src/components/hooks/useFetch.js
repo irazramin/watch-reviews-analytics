@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 
 const useFetch = () =>{
-    const [watchs,setWatchs] = useState([]);
+    const [reviews,setReviews] = useState([]);
     useEffect(() =>{
         fetch('reviews.json')
         .then(res => res.json())
-        .then(data => setWatchs(data))
+        .then(data => setReviews(data))
     },[])
 
-    return [watchs,setWatchs]
+    return [reviews,setReviews]
 }
 
 export default useFetch;

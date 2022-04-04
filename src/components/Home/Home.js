@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Hero from '../Hero/Hero';
-import useFetch from '../hooks/useFatch';
+import useFetch from '../hooks/useFetch';
 import Review from '../Review/Review';
 
 const Home = () => {
-    const [reviews,setreviews] = useFetch();
+    const [reviews,setReviews] = useFetch();
     const navigate = useNavigate();
     const homeReview = reviews.filter((item ,idx) => idx < 3);
 
