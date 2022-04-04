@@ -4,7 +4,7 @@ import analytics from '../../data/analytic';
 
 const Dashboard = () => {
   return (
-    <div className='grid grid-cols-2 my-10 w-10/12 mx-auto'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 my-10 w-10/12 mx-auto gap-10'>
       <div>
         <LineChart
           width={430}

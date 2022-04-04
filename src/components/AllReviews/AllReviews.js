@@ -5,7 +5,7 @@ import Review from '../Review/Review';
 const AllReviews = () => {
     const [watchs,setWatchs] = useFetch();
   return (
-    <div className='grid grid-cols-3 gap-7'>
+    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7'>
       {watchs.map(
         (review, idx) =>  <Review key={review.id}  review={review} />
       )}

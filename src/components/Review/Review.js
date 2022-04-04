@@ -6,7 +6,7 @@ const Review = ({review}) => {
   return (
     <div className='flex border-2 p-3 '>
       <div className='mt-2'>
-        <img className='w-[45px] h-[45px] rounded-full' src={img} alt='' />
+        <img className='w-[45px] h-[40px] rounded-full' src={img} alt='' />
       </div>
       <div className='ml-3'>
         <h4 className='text-lg font-semibold'>{name}</h4>
