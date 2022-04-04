@@ -1,6 +1,6 @@
 # Watch reviews & analytics
 
-Live site : [Click me](https://watchreviewandanalytics.netlify.app).
+Live site : [Click me](https://reviews-and-analytics.vercel.app/).
 
 * This is a review and analytics based website
 * In home page ,you can find hero section,where we have add simple info about our website.After scrolling little bit 
