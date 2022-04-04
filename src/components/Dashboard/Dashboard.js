@@ -5,7 +5,10 @@ import analytics from '../../data/analytic';
 const Dashboard = () => {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 my-10 w-10/12 mx-auto gap-10 place-content-evenly'>
-      <div >
+      <div>
+        <h2 className='text-xl font-medium text-slate-900 ml-36 mb-5'>
+          Month wise sell
+        </h2>
         <LineChart
           width={350}
           height={250}
@@ -26,6 +29,10 @@ const Dashboard = () => {
         </LineChart>
       </div>
       <div>
+        <h2 className='text-xl font-medium text-slate-900 ml-36 mb-5'>
+          Investment vs Revenue
+        </h2>
+
         <AreaChart
           width={350}
           height={250}
@@ -63,6 +70,9 @@ const Dashboard = () => {
         </AreaChart>
       </div>
       <div>
+        <h2 className='text-xl font-medium text-slate-900 ml-36 mb-5'>
+          Investment vs Revenue
+        </h2>
         <BarChart width={350} height={250} data={analytics}>
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey='month' />
@@ -75,6 +85,9 @@ const Dashboard = () => {
         </BarChart>
       </div>
       <div>
+        <h2 className='text-xl font-medium text-slate-900 ml-36 mb-5'>
+          Investment vs Revenue
+        </h2>
         <PieChart width={350} height={250}>
           <Pie
             data={analytics}
