@@ -8,7 +8,7 @@ const Home = () => {
     const [reviews,setReviews] = useFetch();
     const navigate = useNavigate();
     const homeReview = reviews.filter((item ,idx) => idx < 3);
-
+    console.log(homeReview)
     const handleReviewsNavigate = () =>{
     const path = '/reviews';
     navigate(path);
